@@ -1,7 +1,4 @@
-#fis-vue-demo
-使用vue全家桶，结合fis实现spa（单页面）开发。
-
-# 安装
+# 1.安装
 ## 下载
 ```git clone```
 
@@ -22,7 +19,7 @@ npm run dev
 ## 访问
 http://127.0.0.1:8080/page/fis-vue-cli/form.html
 
-# 功能
+# 2.功能
 根据不同需求，可以同时支持单页面和多页面开发。
 ## 模块化
 使用commonjs思想，支持js和css的模块化
@@ -79,52 +76,53 @@ $.ajax({
 
 ```
 
-## 代码结构
-├── assets 静态资源
-│   ├── comm 公共js库
-│   │   ├── comm.es
-│   │   └── lazyImg.es
-│   ├── css
-│   │   └── base 公共css库
-│   │       ├── comm.less
-│   │       ├── flexible.less
-│   │       ├── reset.less
-│   │       └── swiper.less
-│   ├── data 测试数据
-│   │   └── form.es
-│   ├── img
-│   ├── lib 第三方类库
-│   │   ├── d3.3.5.js
-│   │   ├── d3.4.12.js
-│   │   ├── fastClick.js
-│   │   ├── iscroll-lite5.js
-│   │   ├── mod.js
-│   │   ├── swiper.js
-│   │   ├── vue-router.js
-│   │   ├── vue.js
-│   │   ├── vuex.js
-│   │   └── zepto.js
-│   ├── nomod 不需要模块化的资源
-│   │   └── flexible.es
-│   └── page 页面入口js
-│       └── form.es
-│       └── other.es
-├── component vue组件
-│   ├── comm  公共组件
-│   ├── page  业务相关组件
-│   │   ├── form 第一个页面（spa）
-│   │   │   ├── addpage.vue
-│   │   │   ├── app.vue
-│   │   │   ├── editpage.vue
-│   │   │   └── list.vue
-│   │   └── other 第二个页面（非spa）
-│   │       └── index.vue
-│   └── tpl 可以服用的静态模板
-│       └── baiduTj.tpl
-├── fis-conf.js fis配置文件
-├── package.json npm配置文件
-└── page   html文件
-    ├── form.tpl   页面对应的html
-    ├── other.tpl   页面对应的html
-    └── layout.tpl 公共的layout模板
+# 3.代码结构
+
+	├── assets 静态资源
+	│   ├── comm 公共js库
+	│   │   ├── comm.es
+	│   │   └── lazyImg.es
+	│   ├── css
+	│   │   └── base 公共css库
+	│   │       ├── comm.less
+	│   │       ├── flexible.less
+	│   │       ├── reset.less
+	│   │       └── swiper.less
+	│   ├── data 测试数据
+	│   │   └── form.es
+	│   ├── img
+	│   ├── lib 第三方类库
+	│   │   ├── d3.3.5.js
+	│   │   ├── d3.4.12.js
+	│   │   ├── fastClick.js
+	│   │   ├── iscroll-lite5.js
+	│   │   ├── mod.js
+	│   │   ├── swiper.js
+	│   │   ├── vue-router.js
+	│   │   ├── vue.js
+	│   │   ├── vuex.js
+	│   │   └── zepto.js
+	│   ├── nomod 不需要模块化的资源
+	│   │   └── flexible.es
+	│   └── page 页面入口js
+	│       └── form.es
+	│       └── other.es
+	├── component vue组件
+	│   ├── comm  公共组件
+	│   ├── page  业务相关组件
+	│   │   ├── form 第一个页面（spa）
+	│   │   │   ├── addpage.vue
+	│   │   │   ├── app.vue
+	│   │   │   ├── editpage.vue
+	│   │   │   └── list.vue
+	│   │   └── other 第二个页面（非spa）
+	│   │       └── index.vue
+	│   └── tpl 可以服用的静态模板
+	│       └── baiduTj.tpl
+	├── fis-conf.js fis配置文件
+	├── package.json npm配置文件
+	└── page   html文件
+	    ├── form.tpl   页面对应的html
+	    ├── other.tpl   页面对应的html
+	    └── layout.tpl 公共的layout模板
 
