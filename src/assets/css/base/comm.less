@@ -1,0 +1,128 @@
+// 公共样式库
+@import "reset.less";
+
+.cn_hide, .hide {
+	display: none
+}
+
+.cn_ellipsis {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis
+}
+
+.cn_kw3 {
+	display: block;
+	padding: 7.5px 0;
+	font-size: 15px;
+	color: #222
+}
+
+.cn_fl {
+	overflow: hidden
+}
+
+.cn_fl>a {
+	float: left;
+	width: 25%;
+	box-sizing: border-box;
+	text-align: center;
+	white-space: nowrap;
+	overflow: hidden
+}
+
+.cn_fl.border {
+	border-top: 1px solid #eee;
+	border-left: 1px solid #eee
+}
+
+.cn_fl.border>a {
+	border-bottom: 1px solid #eee;
+	border-right: 1px solid #eee
+}
+
+.cn_fl5>a {
+	width: 20%
+}
+
+.cn_bg {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 100%
+}
+
+.cn_bg_mask {
+	position: fixed;
+	background: #000;
+	opacity: .4;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 11;
+	display: none
+}
+
+.cn_red {
+	position: relative;
+
+	&:after {
+		content: "";
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 5px;
+		height: 5px;
+		background-color: #ff6300;
+		border-radius: 5px;
+		z-index: 12
+	}
+
+}
+
+.cn_title {
+	position: relative;
+	line-height: 40px;
+	margin: 0 15px;
+	padding-left: 10px;
+	border-bottom: 1px solid #eee;
+
+	&:before {
+		content: "";
+		position: absolute;
+		left: 0;
+		top: 50%;
+		margin-top: -10px;
+		width: 2px;
+		height: 20px;
+		background-color: green
+	}
+
+}
+
+.cn_btn {
+	display: block;
+	margin: 30px auto 0;
+	width: 200px;
+	line-height: 40px;
+	border: 1px solid #eee;
+	border-radius: 20px;
+	background: #ff6300;
+	text-align: center;
+	font-size: 20px;
+
+	&, &:visited {
+		color: #fff
+	}
+
+}
+
+.cn_input {
+	display: block;
+	width: 80%;
+	line-height: 40px;
+	margin: 0 auto;
+	padding: 0 10px;
+	border: 1px solid #eee;
+	font-size: 18px
+}

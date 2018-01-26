@@ -1,0 +1,57 @@
+@charset "utf-8";
+html {overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100% }
+html * { outline: 0; -webkit-text-size-adjust: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0) }
+input, select, textarea { font-size: 100% }
+table { border-collapse: collapse; border-spacing: 0 }
+del { text-decoration: line-through }
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline }
+
+// 用户禁用js时，使用media实现rem
+html {
+    font-size: 50px; //默认 viewport-width = 375px
+}
+@media screen and (min-width: 320px) {
+    html {
+        font-size: 42.66px;
+    }
+}
+@media screen and (min-width: 360px) {
+    html {
+        font-size: 48px;
+    }
+}
+@media screen and (min-width: 400px) {
+    html {
+        font-size: 53.33px;
+    }
+}
+@media screen and (min-width: 414px) {
+    html {
+        font-size: 55.2px;
+    }
+}
+@media screen and (min-width: 440px) {
+    html {
+        font-size: 58.66px;
+    }
+}
+@media screen and (min-width: 480px) {
+    html {
+        font-size: 64px;
+    }
+}
+@media screen and (min-width: 520px) {
+    html {
+        font-size: 69.33px;
+    }
+}
+@media screen and (min-width: 560px) {
+    html {
+        font-size: 74.66;
+    }
+}
+@media screen and (min-width: 600px) {
+    html {
+        font-size: 80px;
+    }
+}
