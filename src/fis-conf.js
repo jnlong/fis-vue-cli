@@ -104,6 +104,15 @@ fis.match('{debug.log,package*.json,fis-conf*.js}', {
     release: false
 });
 
+// 测试环境
+fis.media('dev')
+    .match('*.{css,less}', {
+        optimizer: fis.plugin('clean-css')
+    })
+    .match('*.{js,es,vue}', {
+        optimizer: fis.plugin('uglify-js')
+    });
+
 // 生产环境
 if (!isDebug) {
     fis.match('*.{css,less}', {
@@ -129,4 +138,3 @@ if (!isDebug) {
         domain: 'https://xx.xxstatic.com/'
     });
 }
-

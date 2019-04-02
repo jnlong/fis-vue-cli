@@ -7,17 +7,16 @@
 
 ## 安装npm依赖包
 ```
-	cd fis-vue-demo/src
-	npm install
+	cd fis-vue-cli/src && npm install --save-dev
 ```
 ## 开启fis server服务
-fis3 server start
+fis3 server start -p 8191
 
 ## 执行fis编译
-npm run dev
+``` npm run dev ```
 
 ## 访问
-http://127.0.0.1:8080/page/fis-vue-cli/form.html
+http://127.0.0.1:8191/page/fis-vue-cli/form.html
 
 # 2.功能
 根据不同需求，可以同时支持单页面和多页面开发。
@@ -92,12 +91,7 @@ $.ajax({
 	│   │   └── form.es
 	│   ├── img
 	│   ├── lib 第三方类库
-	│   │   ├── d3.3.5.js
-	│   │   ├── d3.4.12.js
-	│   │   ├── fastClick.js
-	│   │   ├── iscroll-lite5.js
 	│   │   ├── mod.js
-	│   │   ├── swiper.js
 	│   │   ├── vue-router.js
 	│   │   ├── vue.js
 	│   │   ├── vuex.js
@@ -125,4 +119,3 @@ $.ajax({
 	    ├── form.tpl   页面对应的html
 	    ├── other.tpl   页面对应的html
 	    └── layout.tpl 公共的layout模板
-
